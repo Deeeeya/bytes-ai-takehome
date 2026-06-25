@@ -1,0 +1,74 @@
+{
+    "restaurant": "Uncle's Deli",
+    "currency": "USD",
+    "categories": [
+      {
+        "name": "Sandwiches",
+        "items": [
+          {
+            "id": "sand_001",
+            "name": "Italian Sub",
+            "basePrice": 11.50,
+            "available": true,
+            "modifiers": [
+              {
+                "id": "size",
+                "label": "Size",
+                "required": true,
+                "options": [
+                  { "id": "half", "label": "Half", "priceDelta": 0 },
+                  { "id": "full", "label": "Full", "priceDelta": 4.00 }
+                ]
+              },
+              {
+                "id": "addons",
+                "label": "Add-ons",
+                "required": false,
+                "multiple": true,
+                "options": [
+                  { "id": "avocado", "label": "Avocado", "priceDelta": 1.75 },
+                  { "id": "extra_cheese", "label": "Extra Cheese", "priceDelta": 1.00 }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "sand_002",
+            "name": "Turkey Club",
+            "basePrice": 10.00,
+            "available": false,
+            "modifiers": []
+          }
+        ]
+      },
+      {
+        "name": "Sides",
+        "items": [
+          { "id": "side_001", "name": "Fries", "basePrice": 3.50, "available": true },
+          { "id": "side_002", "name": "Chips", "basePrice": 2.00, "available": true, "modifiers": [] }
+        ]
+      },
+      {
+        "name": "Drinks",
+        "items": [
+          {
+            "id": "drink_001",
+            "name": "Fountain Soda",
+            "basePrice": 2.50,
+            "available": true,
+            "modifiers": [
+              {
+                "id": "size",
+                "label": "Size",
+                "required": true,
+                "options": [
+                  { "id": "sm", "label": "Small", "priceDelta": 0 },
+                  { "id": "lg", "label": "Large", "priceDelta": 1.25 }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
